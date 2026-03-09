@@ -1,6 +1,6 @@
 #Create a program that ask user to input 2 numbers. Print the quotient of the two numbers with the decimal point
 
-def print_sum_of_two_numbers():
+def print_quotient_of_two_numbers():
     try:
         first_input_number = float(input(f"Please enter the first number: "))
         second_input_number = float(input(f"Please enter the second number: "))
@@ -15,4 +15,4 @@ def print_sum_of_two_numbers():
     except ZeroDivisionError:
         print("Error: You cannot divide a number by zero! Please try again with a non-zero second number.")
 
-print_sum_of_two_numbers()
+print_quotient_of_two_numbers()

@@ -13,6 +13,6 @@ def calculate_and_print_integer_quotient():
         print("The number you have entered is invalid")
         
     except ZeroDivisionError:
-        print("You cannot divide a number by zero.")
+        print("Error: You cannot divide a number by zero.")
 
 calculate_and_print_integer_quotient()

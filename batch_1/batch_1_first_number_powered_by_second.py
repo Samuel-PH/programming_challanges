@@ -12,4 +12,7 @@ def power_of_two_numbers():
     except ValueError:
         print("The number you have entered is invalid")
 
+    except OverflowError:
+        print(" The number you entered is too big. Enter a smaller number")
+        
 power_of_two_numbers()

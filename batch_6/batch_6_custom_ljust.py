@@ -17,3 +17,15 @@ def custom_left_justify():
         print("Please enter a valid whole number for the length.")
 
 custom_left_justify()
+
+#Optimized
+
+def custom_left_justify():
+    try:
+        text = input("Text: ")
+        width = int(input("Width: "))
+        print(f"Result: [{text + ' ' * max(0, width - len(text))}]")
+    except ValueError:
+        print("Invalid width.")
+
+custom_left_justify()

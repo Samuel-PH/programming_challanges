@@ -22,3 +22,15 @@ def manual_swapcase():
     print(f"Result: {swapped_text}")
 
 manual_swapcase()
+
+#Optimized
+
+def manual_swapcase():
+    text = input("Text: ")
+    result = ""
+    for c in text:
+        result += chr(ord(c) - 32) if 'a' <= c <= 'z' else chr(ord(c) + 32) if 'A' <= c <= 'Z' else c
+    print(f"Result: {result}")
+
+manual_swapcase()
+

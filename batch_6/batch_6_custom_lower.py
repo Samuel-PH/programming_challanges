@@ -17,3 +17,16 @@ def lowercase_converter():
     print(f"Result: {lowercased_text}")
 
 lowercase_converter()
+
+#Optimized
+
+def manual_lower():
+    text = input("Text: ")
+    result = ""
+    
+    for c in text:
+        result += chr(ord(c) + 32) if 'A' <= c <= 'Z' else c
+        
+    print(f"Result: {result}")
+
+manual_lower()

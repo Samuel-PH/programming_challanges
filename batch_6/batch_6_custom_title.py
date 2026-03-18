@@ -20,3 +20,19 @@ def manual_title_case():
     print(f"Result: {title_case_text}")
 
 manual_title_case()
+
+#Optimized
+
+def manual_title_case():
+    text = input("Text: ")
+    result = ""
+    new = True
+    
+    for c in text:
+        result += c.upper() if new else c.lower()
+        new = (c == " ")
+        
+    print(f"Result: {result}")
+
+manual_title_case()
+

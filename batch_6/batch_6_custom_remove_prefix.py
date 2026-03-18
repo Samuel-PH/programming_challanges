@@ -14,3 +14,12 @@ def remove_custom_prefix():
     print(f"Result: {result}")
 
 remove_custom_prefix()
+
+#Optimized
+
+def manual_removeprefix():
+    text = input("Text: ")
+    prefix = input("Prefix: ")
+    print(f"Result: {text[len(prefix):] if text[:len(prefix)] == prefix else text}")
+
+manual_removeprefix()

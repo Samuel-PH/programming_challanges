@@ -1,3 +1,6 @@
+#center() add space characters at the beginning and at the end of the string to print the string at the center. 
+#Create a program that do the same functionality without using center() function.
+
 def custom_center():
     text = input("Please enter your text: ")
     
@@ -20,3 +23,23 @@ def custom_center():
         print("Please enter a valid whole number for the width.")
 
 custom_center()
+
+#optimized
+
+def custom_center():
+    try:
+        text = input("text:")
+        width = int(input("width:"))
+        pad = max(0, (width - len(text)) // 2)
+        print(f"Result: [{' ' * pad + text + ' ' * pad}]")
+    except ValueError:
+        print("invalid width")
+
+custom_center()
+
+#STEPS:
+#1. Get input from the user for the text and the desired total width.   
+#2. Calculate the length of the input text.
+#3. If the desired width is greater than the length of the text, calculate the total padding needed and divide it into left and right padding.
+#4. Create the centered text by adding the left padding, the original text, and the right padding together.
+#5. Print the result with brackets to visualize the centering.

@@ -12,3 +12,12 @@ def remove_leading_spaces_manual():
     print(f"Cleaned output: [{clean_text}]")
 
 remove_leading_spaces_manual()
+
+#Optimized
+
+def manual_lstrip():
+    text = input("Text: ")
+    while text[:1] == ' ': text = text[1:]
+    print(f"Result: [{text}]")
+
+manual_lstrip()
